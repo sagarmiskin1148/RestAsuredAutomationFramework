@@ -7,7 +7,6 @@
 	<artifactId>RestAssuredAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -16,7 +15,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.10.1</version>
 					<configuration>
-						<!-- put your configurations here -->
+						<source>11</source>
+						<target>11</target>
 					</configuration>
 				</plugin>
 
@@ -30,12 +30,9 @@
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
-
 			</plugins>
-
 		</pluginManagement>
 	</build>
-
 
 	<dependencies>
 
@@ -47,16 +44,15 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- TestNG (Downgraded to a stable version) -->
+		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.7.0</version>  <!-- Changed from 7.10.2 to 7.7.0 -->
+			<version>7.7.0</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- Selenium -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -78,14 +74,14 @@
 			<version>2.2.6</version>
 		</dependency>
 
-		<!-- Extent Reports for Test Reporting -->
+		<!-- Extent Reports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
 		</dependency>
 
-		<!-- Apache POI for Excel Handling -->
+		<!-- Apache POI -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -98,14 +94,14 @@
 			<version>5.2.5</version>
 		</dependency>
 
-		<!-- Java Faker for Random Test Data Generation -->
+		<!-- Java Faker -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
 
-		<!-- Log4J for Logging -->
+		<!-- Log4J -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
@@ -118,28 +114,12 @@
 			<version>2.17.2</version>
 		</dependency>
 
-		<!-- SLF4J Simple Logger to fix logging issues -->
+		<!-- SLF4J Simple Logger -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>2.0.7</version>
 		</dependency>
-
-
-		<!-- ✅ Log4j -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.17.1</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.17.1</version>
-		</dependency>
-
 
 	</dependencies>
 
